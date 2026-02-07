@@ -3,10 +3,19 @@
     <head>
         <title>Imagenes</title>
         <meta charset="utf-8"/>
+        <meta viewport=""/>
         <!--Comentario en HTML-->
     </head>
     <body>
         <img src="img/perfiloptimizado.jpg" alt="Perfil del Usuario"/>
+        <br/>
         <img src="https://picsum.photos/id/12/480/320" alt="Imagen de relleno"/>
+        <img src="https://placehold.co/id/1040x400"/>
+        <br/>
+
+        <picture>
+            <source srcset="https://picsum.photos/id/12/480/320" media="(min-width: 1024px)"/>
+            <source srcset="https://picsum.photos/id/12/480/320" media="(min-width: 720px)"/>
+        </picture>
     </body>
 </html>
