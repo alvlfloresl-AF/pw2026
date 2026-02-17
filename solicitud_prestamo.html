@@ -1,0 +1,65 @@
+<!--Alvaro Luis Flores Lopez - 1519200400322-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Préstamo Estudiantil</title>
+</head>
+<body>
+    <h1>Formulario de Solicitud de Préstamo Estudiantil</h1>
+    <form action="solicitud_prestamo.html" method="post">
+        <label for="txtNombre">Nombre completo:</label><br>
+        <input type="text" id="txtNombre" name="txtNombre"><br><br>
+        <label for="txtEmail">Correo electrónico:</label><br>
+        <input type="email" id="txtEmail" name="txtEmail"><br><br>
+        <label for="txtTelefono">Número de teléfono:</label><br>
+        <input type="text" id="txtTelefono" name="txtTelefono"><br><br>
+        <label for="txtDireccion">Dirección actual:</label><br>
+        <input type="text" id="txtDireccion" name="txtDireccion"><br><br>
+        <label for="txtCiudad">Ciudad:</label><br>
+        <input type="text" id="txtCiudad" name="txtCiudad"><br><br>
+        <label for="cmbEstado">Estado:</label><br>
+
+        <select id="cmbEstado" name="cmbEstado">
+            <option value="">-- Seleccione un estado --</option>
+            <option value="Francisco Morazan">Francisco Morazán</option>
+            <option value="Cortes">Cortés</option>
+            <option value="Atlantida">Atlántida</option>
+            <option value="Olancho">Olancho</option>
+            <option value="Comayagua">Comayagua</option>
+        </select><br><br>
+
+        <label for="txtPostal">Código postal:</label><br>
+        <input type="text" id="txtPostal" name="txtPostal"><br><br>
+        <label>Nivel de educación actual:</label><br>
+        <input type="radio" id="eduPrepa" name="nivelEducacion" value="Preparatoria">
+        <label for="eduPrepa">Preparatoria</label><br>
+        <input type="radio" id="eduLic" name="nivelEducacion" value="Licenciatura">
+        <label for="eduLic">Licenciatura</label><br>
+        <input type="radio" id="eduMaes" name="nivelEducacion" value="Maestria">
+        <label for="eduMaes">Maestría</label><br>
+        <input type="radio" id="eduDoc" name="nivelEducacion" value="Doctorado">
+        <label for="eduDoc">Doctorado</label><br><br>
+
+        <label>Programa de estudio:</label><br>
+        <input type="radio" id="progCC" name="programaEstudio" value="Ciencias de la Computacion">
+        <label for="progCC">Ciencias de la Computación</label><br>
+        <input type="radio" id="progIng" name="programaEstudio" value="Ingenieria">
+        <label for="progIng">Ingeniería</label><br>
+        <input type="radio" id="progEco" name="programaEstudio" value="Economia">
+        <label for="progEco">Economía</label><br>
+        <input type="radio" id="progArt" name="programaEstudio" value="Artes">
+        <label for="progArt">Artes</label><br>
+        <input type="radio" id="progOtro" name="programaEstudio" value="Otro">
+        <label for="progOtro">Otro</label><br><br>
+
+        <label for="txtMonto">Monto del préstamo solicitado:</label><br>
+        <input type="text" id="txtMonto" name="txtMonto"><br><br>
+
+        <label for="txtRazon">Razón para solicitar el préstamo:</label><br>
+        <textarea id="txtRazon" name="txtRazon" rows="4" cols="40"></textarea><br><br>
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</body>
+</html>
