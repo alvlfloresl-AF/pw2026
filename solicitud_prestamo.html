@@ -8,17 +8,17 @@
 </head>
 <body>
     <h1>Formulario de Solicitud de Préstamo Estudiantil</h1>
-    <form action="solicitud_prestamo.html" method="post">
+    <form action="solicitud_prestamo.html" method="GET">
         <label for="txtNombre">Nombre completo:</label><br>
-        <input type="text" id="txtNombre" name="txtNombre"><br><br>
+        <input type="text" id="txtNombre" name="txtNombre"><br>
         <label for="txtEmail">Correo electrónico:</label><br>
-        <input type="email" id="txtEmail" name="txtEmail"><br><br>
+        <input type="email" id="txtEmail" name="txtEmail"><br>
         <label for="txtTelefono">Número de teléfono:</label><br>
-        <input type="text" id="txtTelefono" name="txtTelefono"><br><br>
+        <input type="text" id="txtTelefono" name="txtTelefono"><br>
         <label for="txtDireccion">Dirección actual:</label><br>
-        <input type="text" id="txtDireccion" name="txtDireccion"><br><br>
+        <input type="text" id="txtDireccion" name="txtDireccion"><br>
         <label for="txtCiudad">Ciudad:</label><br>
-        <input type="text" id="txtCiudad" name="txtCiudad"><br><br>
+        <input type="text" id="txtCiudad" name="txtCiudad"><br>
         <label for="cmbEstado">Estado:</label><br>
 
         <select id="cmbEstado" name="cmbEstado">
@@ -28,10 +28,10 @@
             <option value="Atlantida">Atlántida</option>
             <option value="Olancho">Olancho</option>
             <option value="Comayagua">Comayagua</option>
-        </select><br><br>
+        </select><br>
 
         <label for="txtPostal">Código postal:</label><br>
-        <input type="text" id="txtPostal" name="txtPostal"><br><br>
+        <input type="text" id="txtPostal" name="txtPostal"><br>
         <label>Nivel de educación actual:</label><br>
         <input type="radio" id="eduPrepa" name="nivelEducacion" value="Preparatoria">
         <label for="eduPrepa">Preparatoria</label><br>
@@ -40,7 +40,7 @@
         <input type="radio" id="eduMaes" name="nivelEducacion" value="Maestria">
         <label for="eduMaes">Maestría</label><br>
         <input type="radio" id="eduDoc" name="nivelEducacion" value="Doctorado">
-        <label for="eduDoc">Doctorado</label><br><br>
+        <label for="eduDoc">Doctorado</label><br>
 
         <label>Programa de estudio:</label><br>
         <input type="radio" id="progCC" name="programaEstudio" value="Ciencias de la Computacion">
@@ -55,10 +55,10 @@
         <label for="progOtro">Otro</label><br><br>
 
         <label for="txtMonto">Monto del préstamo solicitado:</label><br>
-        <input type="text" id="txtMonto" name="txtMonto"><br><br>
+        <input type="text" id="txtMonto" name="txtMonto"><br>
 
         <label for="txtRazon">Razón para solicitar el préstamo:</label><br>
-        <textarea id="txtRazon" name="txtRazon" rows="4" cols="40"></textarea><br><br>
+        <textarea id="txtRazon" name="txtRazon" ></textarea><br>
         <button type="submit">Enviar Solicitud</button>
     </form>
 </body>

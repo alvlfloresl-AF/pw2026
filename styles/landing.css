@@ -1,0 +1,104 @@
+:root {
+    font-size: 16px;
+    font-size: 100%;
+    font-size: 1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: #000;
+    color: white;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+}
+
+.carousel {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.carousel .track {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: max-content; /* Corregido: asegura que el contenedor respete el ancho total de los slides */
+    height: 60vh;
+    left: 0vw;
+    transition: left 0.7s ease-in-out;
+}
+
+.carousel .track .slide {
+    flex: 0 0 100vw; /* Corregido: evita que el ancho del slide colapse a 0 */
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+}
+
+.carousel .track .slide .image {
+    width: 100vw;
+    height: 60vh;
+}
+
+.carousel .track .slide .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.carousel .track .slide .action {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 200px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 3px 3px #333;
+}
+
+.carousel .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Corregido: faltaba el símbolo de % para centrar verticalmente */
+    height: 4rem;
+    width: 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    z-index: 10; /* Corregido: asegura que los botones estén por encima de las imágenes */
+    cursor: pointer;
+}
+
+.carousel .carousel-btn.btnright {
+    right: 0px;
+}
+
+.carousel .carousel-btn.btnleft {
+    left: 0px;
+}
